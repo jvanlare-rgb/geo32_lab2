@@ -1,0 +1,120 @@
+/* General Page Styling */
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa; /* lighter gray for cleaner look */
+    color: #333; /* subtle text color */
+    line-height: 1.6;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #3a3a3a; /* darker neutral gray */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* even spacing between links */
+    max-width: 350px;
+  }
+  
+  .navbar li {
+    /* no float needed when using flex */
+  }
+  
+  .navbar a {
+    display: block;
+    color: #f5f5f5; /* clean white text */
+    text-align: center;
+    padding: 14px 24px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 6px;
+  }
+  
+  .navbar a:hover {
+    background-color: #2196F3; /* soft blue hover */
+    color: white;
+  }
+  
+  .navbar a.active {
+    background-color: #4CAF50; /* green for active link */
+    color: white;
+  }
+  
+  /* Page Container for Centering Content */
+  .container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 40px 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+  
+  /* Headings */
+  h1, h2, h3 {
+    color: #222;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Links and Text */
+  a {
+    color: #2196F3;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .content {
+    max-width: 700px;  /* wider or narrower depending on preference */
+  }
+
+  img {
+    display: block;
+    margin: 20px auto;
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .ava-table-container {
+    overflow-x: auto;
+    margin: 30px 0;
+  }
+  
+  /* AVA Table Styling */
+  .ava-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+  }
+  
+  .ava-table th,
+  .ava-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .ava-table th {
+    background-color: #3a3a3a;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .ava-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* subtle stripe for readability */
+  }
+  
+  .ava-table tbody tr:hover {
+    background-color: #b9ccbc; /* hover effect */
+  }
